@@ -208,8 +208,8 @@ let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 " dbext settings and profiles
-"let g:dbext_default_profile_faculty = 'type=ORA:user=faculty:passwd=QA!33ds:host=shadev'
-let g:dbext_default_profile_faculty = 'type=DBI:user=faculty:passwd=QA!33ds:driver=Oracle:conn_parms=shadev'
-let g:dbext_default_profile_webadmin_sha = 'type=DBI:user=webadmin:passwd=Oonidthaf4:driver=Oracle:conn_parms=sha'
+"let g:dbext_default_profile_faculty = 'type=ORA:user=faculty:passwd=xxxxxxxx:host=shadev'
+let g:dbext_default_profile_faculty = 'type=DBI:user=faculty:passwd=xxxxxxxx:driver=Oracle:conn_parms=tnsname'
+let g:dbext_default_profile_webadmin_sha = 'type=DBI:user=webadmin:passwd=xxxxxxxx:driver=Oracle:conn_parms==tnsname'
 let g:dbext_default_DBI_commit_on_disconnect = 0
 let g:dbext_default_DBI_disconnect_onerror = 0
