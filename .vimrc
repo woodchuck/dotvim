@@ -7,7 +7,7 @@ set term=xterm-256color
 colorscheme railscasts
 set ls=2
 set pastetoggle=<F2>
-let g:pathogen_disabled = ['vim-css-color', 'minibufexpl.vim', 'numbers']
+let g:pathogen_disabled = []
 call pathogen#runtime_append_all_bundles()
 runtime macros/matchit.vim
 au BufNewFile,BufRead *.html set filetype=php
