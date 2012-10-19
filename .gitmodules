@@ -76,3 +76,6 @@
 [submodule "bundle/textobj-entire"]
 	path = bundle/textobj-entire
 	url = git://github.com/kana/vim-textobj-entire.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git

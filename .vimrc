@@ -68,6 +68,10 @@ set tabstop=4
 " highlight current line
 set cul
 
+" custom colors to highlight search results
+"hi Search cterm=NONE ctermbg=lightcyan
+hi Search cterm=reverse
+
 " easy way to get back to normal mode
 inoremap tn <Esc>
 
