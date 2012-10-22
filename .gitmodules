@@ -6,10 +6,6 @@
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
 	ignore = dirty
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
-	ignore = dirty
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
