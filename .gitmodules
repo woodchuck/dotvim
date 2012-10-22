@@ -106,3 +106,7 @@
 	path = bundle/taboo
 	url = git://github.com/gcmt/taboo.vim.git
 	ignore = dirty
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git
+	ignore = dirty
