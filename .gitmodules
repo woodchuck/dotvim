@@ -34,10 +34,6 @@
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
 	ignore = dirty
-[submodule "bundle/neocomplcache-snippets-complete"]
-	path = bundle/neocomplcache-snippets-complete
-	url = git://github.com/Shougo/neocomplcache-snippets-complete.git
-	ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -109,4 +105,8 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+	ignore = dirty
+[submodule "bundle/neosnippet"]
+	path = bundle/neosnippet
+	url = git://github.com/Shougo/neosnippet.git
 	ignore = dirty
