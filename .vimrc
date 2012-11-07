@@ -112,8 +112,8 @@ nnoremap <Leader>0 :10b<CR>
 " Substitute
 nnoremap <Leader>s :%s//<left>
 
-" close buffer
-nnoremap <Leader>c :bd<CR>
+" close buffer using bufkill plugin to preserve window
+nnoremap <Leader>c :BD<CR>
 
 " add changes to git index
 nnoremap <Leader>w :Gwrite<CR>

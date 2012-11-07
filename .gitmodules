@@ -110,3 +110,6 @@
 	path = bundle/neosnippet
 	url = git://github.com/Shougo/neosnippet.git
 	ignore = dirty
+[submodule "bundle/bufxill"]
+	path = bundle/bufxill
+	url = git://github.com/vim-scripts/bufkill.vim.git
