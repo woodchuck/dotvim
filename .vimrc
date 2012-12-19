@@ -222,3 +222,22 @@ let g:dbext_default_profile_faculty = 'type=DBI:user=faculty:passwd=xxxxxxxx:dri
 let g:dbext_default_profile_webadmin_sha = 'type=DBI:user=webadmin:passwd=xxxxxxxx:driver=Oracle:conn_parms==tnsname'
 let g:dbext_default_DBI_commit_on_disconnect = 0
 let g:dbext_default_DBI_disconnect_onerror = 0
+
+" Gonzui {{{
+" TODO: search for word under the cursor
+" TODO: determine which gonzui package to search based on :pwd
+
+command! -nargs=1 Gonzui call s:Gonzui('<args>')
+
+function! Gonzui(query)
+  let grepprg = &grepprg
+  let grepformat = &grepformat
+  try
+    let &grepprg = 'gonzui-search -n $*'
+    let &grepformat = '%f:%l: %m'
+    exe "grep '" . shellescape(a:query) . "'"
+  finally
+    let &grepprg = grepprg
+    let &grepformat = grepformat
+  endtry
+endfunction
