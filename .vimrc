@@ -24,8 +24,8 @@ let g:debuggerPort = 9002
 "let g:debuggerMiniBufExpl = 1
 
 " enter newline and remain in normal mode
-map <S-Enter> O<Esc>
-map <CR> o<Esc>
+map <S-Enter> o<Esc>
+"map <CR> o<Esc>
 
 " don't unload hidden buffers
 set hidden
@@ -41,8 +41,6 @@ set showcmd
 
 "set mouse=a
 let g:CommandTMaxFiles=30000
-nnoremap <silent> <F9> :TagbarToggle<CR>
-let g:tagbar_autofocus = 1
 
 " location of my ctags file
 set tags=~/git/sha/common/tags
