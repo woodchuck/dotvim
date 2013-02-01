@@ -109,3 +109,6 @@
 [submodule "bundle/bufxill"]
 	path = bundle/bufxill
 	url = git://github.com/vim-scripts/bufkill.vim.git
+[submodule "bundle/seek"]
+	path = bundle/seek
+	url = git://github.com/goldfeld/vim-seek.git
