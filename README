@@ -7,10 +7,18 @@ Installation:
 
 Create symlinks:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/.vimrc ~/.vimrc
 
 Switch to the ~/.vim directory, and fetch submodules:
 
     cd ~/.vim
     git submodule init
     git submodule update
+
+Compile Command-T
+
+    cd ~/.vim/bundle/command-t/ruby/command-t
+    ruby extconf.rb
+    make
+
+This might require you to install the ruby-dev package in Debian/Ubuntu.
