@@ -19,6 +19,10 @@ au BufNewFile,BufRead *.html set filetype=php
 au BufNewFile,BufRead *.etmpl set filetype=php
 au BufNewFile,BufRead *.rb set filetype=ruby.rails
 
+set wildmenu
+set wildmode=longest,list,full
+set wildignore=log/**,.git,vendor/bundle/**
+
 let g:debuggerPort = 9002
 " close minibufexpl when debugging to avoid window carnage
 "let g:debuggerMiniBufExpl = 1
@@ -77,6 +81,7 @@ hi Search cterm=reverse
 
 " easy way to get back to normal mode
 inoremap tn <Esc>
+inoremap jj <Esc>
 
 " Swap ; and :  Convenient.
 nnoremap ; :

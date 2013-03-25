@@ -112,3 +112,6 @@
 [submodule "bundle/seek"]
 	path = bundle/seek
 	url = git://github.com/goldfeld/vim-seek.git
+[submodule "bundle/xpath"]
+	path = bundle/xpath
+	url = git://github.com/actionshrimp/vim-xpath.git
