@@ -72,8 +72,10 @@ hi LineNr ctermfg=239
 
 set tabstop=4
 
-" highlight current line
-set cul
+" highlight current line and column
+set cursorline
+"set cursorcolumn
+"highlight CursorColumn ctermbg=233
 
 " custom colors to highlight search results
 "hi Search cterm=NONE ctermbg=lightcyan
