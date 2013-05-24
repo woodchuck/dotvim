@@ -1,0 +1,1 @@
+../bundle/sexy-railscasts-256-theme/colors/sexy-railscasts-256.vim

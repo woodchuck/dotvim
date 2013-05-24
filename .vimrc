@@ -9,7 +9,7 @@ let g:Powerline_symbols = 'fancy'
 let mapleader=","
 
 set term=xterm-256color
-colorscheme railscasts
+colorscheme sexy-railscasts-256
 set ls=2
 set pastetoggle=<F2>
 let g:pathogen_disabled = []
