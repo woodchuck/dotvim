@@ -129,3 +129,12 @@
 [submodule "bundle/sexy-railscasts-256-theme"]
 	path = bundle/sexy-railscasts-256-theme
 	url = git://github.com/davidkariuki/sexy-railscasts-256-theme.git
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = git@github.com:Shougo/unite.vim.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = git@github.com:Shougo/vimproc.vim.git
+[submodule "bundle/qargs"]
+	path = bundle/qargs
+	url = git@github.com:nelstrom/vim-qargs.git
