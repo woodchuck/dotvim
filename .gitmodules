@@ -138,3 +138,6 @@
 [submodule "bundle/qargs"]
 	path = bundle/qargs
 	url = git@github.com:nelstrom/vim-qargs.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
