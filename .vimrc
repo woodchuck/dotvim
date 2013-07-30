@@ -13,7 +13,7 @@ colorscheme sexy-railscasts-256
 set ls=2
 set pastetoggle=<F2>
 let g:pathogen_disabled = []
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 runtime macros/matchit.vim
 au BufNewFile,BufRead *.html set filetype=php
 au BufNewFile,BufRead *.etmpl set filetype=php
@@ -76,6 +76,10 @@ set tabstop=4
 set cursorline
 "set cursorcolumn
 "highlight CursorColumn ctermbg=233
+
+" subtle highlight on column at 80 chars
+set colorcolumn=80
+:highlight colorcolumn ctermbg=234
 
 " custom colors to highlight search results
 "hi Search cterm=NONE ctermbg=lightcyan
@@ -276,3 +280,5 @@ nnoremap <leader>y :Unite history/yank<CR>
 "let g:unite_source_grep_default_opts = '-i --noheading --nobreak'
 nnoremap <leader>/ :Unite grep:.<CR>
 nnoremap <leader>m :<C-u>Unite -quick-match file_mru<CR>
+
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
