@@ -3,6 +3,7 @@ set nocompatible
 " for powerline
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 
 " use leader that is easier to type than \
@@ -127,7 +128,7 @@ nnoremap <Leader>0 :10b<CR>
 nnoremap <Leader>s :%s//<left>
 
 " close buffer using bufkill plugin to preserve window
-nnoremap <Leader>c :BD<CR>
+nnoremap <Leader>x :BD<CR>
 
 " add changes to git index
 nnoremap <Leader>w :Gwrite<CR>
