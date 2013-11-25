@@ -143,3 +143,9 @@
 [submodule "bundle/ConflictMotions"]
 	path = bundle/ConflictMotions
 	url = https://github.com/vim-scripts/ConflictMotions.git
+[submodule "bundle/CountJump"]
+	path = bundle/CountJump
+	url = https://github.com/vim-scripts/CountJump.git
+[submodule "bundle/ingo-library"]
+	path = bundle/ingo-library
+	url = https://github.com/vim-scripts/ingo-library.git
