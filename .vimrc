@@ -270,3 +270,6 @@ nnoremap <leader>/ :Unite grep:.<CR>
 nnoremap <leader>m :<C-u>Unite -quick-match file_mru<CR>
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+
+" http://vimcasts.org/episodes/creating-mappings-that-accept-a-count/
+nnoremap Q :normal n.<CR>
