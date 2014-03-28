@@ -155,3 +155,6 @@
 [submodule "bundle/exchange"]
 	path = bundle/exchange
 	url = https://github.com/tommcdo/vim-exchange.git
+[submodule "bundle/neomru"]
+	path = bundle/neomru
+	url = https://github.com/Shougo/neomru.vim.git
