@@ -114,6 +114,12 @@ nnoremap <Leader>p :RainbowParenthesesToggle<CR>
 " Substitute
 nnoremap <Leader>s :%s//<left>
 
+" CtrlP
+let g:ctrlp_map = '<Leader>f'
+nnoremap <Leader>m :CtrlPMRU<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>t :CtrlPMixed<CR>
+
 " close buffer using bufkill plugin to preserve window
 nnoremap <Leader>x :BD<CR>
 
@@ -135,7 +141,7 @@ let g:user_zen_settings = {
 \ 'indentation' : '  '
 \}
 
-nnoremap <Leader>f :CommandTFlush<CR>
+"nnoremap <Leader>f :CommandTFlush<CR>
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
