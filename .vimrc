@@ -28,10 +28,6 @@ set wildmenu
 set wildmode=longest,list,full
 set wildignore=log/**,.git,vendor/bundle/**
 
-let g:debuggerPort = 9002
-" close minibufexpl when debugging to avoid window carnage
-"let g:debuggerMiniBufExpl = 1
-
 " enter newline and remain in normal mode
 map <S-Enter> o<Esc>
 "map <CR> o<Esc>
