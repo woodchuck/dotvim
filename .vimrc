@@ -17,7 +17,7 @@ set term=xterm-256color
 colorscheme sexy-railscasts-256
 set ls=2
 set pastetoggle=<F2>
-let g:pathogen_disabled = []
+let g:pathogen_disabled = ['command-t', 'nerdcommenter', 'unite']
 execute pathogen#infect()
 runtime macros/matchit.vim
 au BufNewFile,BufRead *.html set filetype=php
@@ -252,22 +252,22 @@ endfunction
 " Unite mappings
 "let g:unite_source_find_max_candidates = 30000
 "let g:unite_source_file_rec_max_candidates = 30000
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"call unite#filters#matcher_default#use(['matcher_fuzzy'])
 " dvorak-friendly
-let g:unite_quick_match_table =
-      \ get(g:, 'unite_quick_match_table', {
-      \     'a' : 0, 'o' : 1, 'e' : 2, 'u' : 3, 'i' : 4, 'd' : 5, 'h' : 6, 't' : 7, 'n' : 8, 's' : 9,
-      \     "'" : 10, ',' : 11, '.' : 12, 'p' : 13, 'y' : 14, 'f' : 15, 'g' : 16, 'c' : 17, 'r' : 18, 'l' : 19,
-      \     '1' : 20, '2' : 21, '3' : 22, '4' : 23, '5' : 24, '6' : 25, '7' : 26, '8' : 27, '9' : 28, '0' : 29,
-      \ })
+"let g:unite_quick_match_table =
+"      \ get(g:, 'unite_quick_match_table', {
+"      \     'a' : 0, 'o' : 1, 'e' : 2, 'u' : 3, 'i' : 4, 'd' : 5, 'h' : 6, 't' : 7, 'n' : 8, 's' : 9,
+"      \     "'" : 10, ',' : 11, '.' : 12, 'p' : 13, 'y' : 14, 'f' : 15, 'g' : 16, 'c' : 17, 'r' : 18, 'l' : 19,
+"      \     '1' : 20, '2' : 21, '3' : 22, '4' : 23, '5' : 24, '6' : 25, '7' : 26, '8' : 27, '9' : 28, '0' : 29,
+"      \ })
 "nnoremap <leader>t :<C-u>Unite -start-insert file_rec/async:!<CR>
 "nnoremap <leader>b :Unite -quick-match buffer<CR>
-let g:unite_source_history_yank_enable = 1
-nnoremap <leader>y :Unite history/yank<CR>
+"let g:unite_source_history_yank_enable = 1
+"nnoremap <leader>y :Unite history/yank<CR>
 "let g:unite_source_grep_command = 'ag'
 "let g:unite_source_grep_default_opts = '-i --noheading --nobreak'
-nnoremap <leader>/ :Unite grep:.<CR>
-nnoremap <leader>m :<C-u>Unite -quick-match file_mru<CR>
+"nnoremap <leader>/ :Unite grep:.<CR>
+"nnoremap <leader>m :<C-u>Unite -quick-match file_mru<CR>
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
