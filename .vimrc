@@ -19,6 +19,7 @@ set ls=2
 set pastetoggle=<F2>
 let g:pathogen_disabled = ['command-t', 'nerdcommenter', 'unite']
 execute pathogen#infect()
+call pathogen#helptags()
 runtime macros/matchit.vim
 au BufNewFile,BufRead *.html set filetype=php
 au BufNewFile,BufRead *.etmpl set filetype=php
@@ -119,6 +120,7 @@ let g:ctrlp_map = '<Leader>f'
 nnoremap <Leader>m :CtrlPMRU<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>t :CtrlPMixed<CR>
+nnoremap <Leader>d :CtrlP .<CR>
 
 " close buffer using bufkill plugin to preserve window
 nnoremap <Leader>x :BD<CR>
@@ -279,3 +281,7 @@ let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " http://vimcasts.org/episodes/creating-mappings-that-accept-a-count/
 nnoremap Q :normal n.<CR>
+
+" remember useful regexes
+source ~/.vim/regexlist
+
