@@ -1,0 +1,5 @@
+
+let ass_arr = '\v(\$\w{-})\[([[:upper:]''_-]{-})]'
+
+let sub_arr = '%s//\1[\L\2]/g'
+
