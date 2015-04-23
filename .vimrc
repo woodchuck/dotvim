@@ -17,7 +17,9 @@ set term=xterm-256color
 colorscheme sexy-railscasts-256
 set ls=2
 set pastetoggle=<F2>
-let g:pathogen_disabled = ['command-t', 'nerdcommenter', 'unite']
+" command-t replaced with CtrlP
+" seek replaced with easymotion
+let g:pathogen_disabled = ['command-t', 'nerdcommenter', 'seek']
 execute pathogen#infect()
 call pathogen#helptags()
 runtime macros/matchit.vim
@@ -112,8 +114,10 @@ nnoremap <Leader>g :e#<CR>
 
 nnoremap <Leader>p :RainbowParenthesesToggle<CR>
 
+nmap s <Plug>(easymotion-s)
+
 " Substitute
-nnoremap <Leader>s :%s//<left>
+"nnoremap <Leader>s :%s//<left>
 
 " CtrlP
 let g:ctrlp_map = '<Leader>f'
@@ -127,9 +131,6 @@ nnoremap <Leader>x :BD<CR>
 
 " add changes to git index
 nnoremap <Leader>w :Gwrite<CR>
-
-" help EasyMotion not conflict with Command-T
-let g:EasyMotion_leader_key = '<Leader>,'
 
 let g:vimroom_background = "black"
 let g:vimroom_width = 110
