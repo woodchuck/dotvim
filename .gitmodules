@@ -113,6 +113,7 @@
 [submodule "bundle/multiple-cursors"]
 	path = bundle/multiple-cursors
 	url = git://github.com/terryma/vim-multiple-cursors.git
+    ignore = untracked
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = git://github.com/tpope/vim-repeat.git
@@ -149,15 +150,18 @@
 [submodule "bundle/ingo-library"]
 	path = bundle/ingo-library
 	url = https://github.com/vim-scripts/ingo-library.git
+    ignore = untracked
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
+    ignore = untracked
 [submodule "bundle/exchange"]
 	path = bundle/exchange
 	url = https://github.com/tommcdo/vim-exchange.git
 [submodule "bundle/neomru"]
 	path = bundle/neomru
 	url = https://github.com/Shougo/neomru.vim.git
+    ignore = untracked
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
 	url = https://github.com/joonty/vdebug.git
