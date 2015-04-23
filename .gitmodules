@@ -78,10 +78,6 @@
 	path = bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired
 	ignore = dirty
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim
-	ignore = dirty
 [submodule "bundle/textobj-entire"]
 	path = bundle/textobj-entire
 	url = git://github.com/kana/vim-textobj-entire.git
