@@ -127,6 +127,12 @@ nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>t :CtrlPMixed<CR>
 nnoremap <Leader>d :CtrlP .<CR>
 
+" Speed up CtrlP for rails projects
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|coverage|tmp|vendor)$',
+  \ 'file': '\v\.(png|jpg|otf|woff|jpeg|orig)$'
+  \ }
+
 " close buffer using bufkill plugin to preserve window
 nnoremap <Leader>x :BD<CR>
 
