@@ -10,10 +10,6 @@
 	path = bundle/SudoEdit.vim
 	url = git://github.com/chrisbra/SudoEdit.vim.git
 	ignore = dirty
-[submodule "bundle/Railscasts-Theme-GUIand256color"]
-	path = bundle/Railscasts-Theme-GUIand256color
-	url = git://github.com/vim-scripts/Railscasts-Theme-GUIand256color.git
-	ignore = dirty
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = git://github.com/chrisbra/csv.vim.git
