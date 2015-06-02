@@ -11,7 +11,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 
 " use leader that is easier to type than \
-let mapleader=","
+let mapleader="\<Space>"
 
 set term=xterm-256color
 colorscheme sexy-railscasts-256
