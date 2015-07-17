@@ -102,9 +102,6 @@ nnoremap \ ;
 " Highlight things that we find with the search
 set hlsearch
 
-" Space will toggle folds!
-nnoremap <space> za
-
 " open folds by default
 set foldlevelstart=20
 
