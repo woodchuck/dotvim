@@ -97,7 +97,7 @@ inoremap jj <Esc>
 " Swap ; and :  Convenient.
 nnoremap ; :
 " nnoremap : ; breaks command-t
-nnoremap \ ;
+nnoremap : ;
 
 " Highlight things that we find with the search
 set hlsearch
