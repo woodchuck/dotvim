@@ -75,7 +75,13 @@ nnoremap <Leader>ln :set number!<CR>
 " unobtrusive color for line numbers
 hi LineNr ctermfg=239
 
-set tabstop=4
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
+autocmd FileType php setlocal shiftwidth=4 tabstop=4
+autocmd FileType perl setlocal shiftwidth=4 tabstop=4
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 " highlight current line and column
 set cursorline
@@ -84,7 +90,7 @@ set cursorline
 
 " subtle highlight on column at 80 chars
 set colorcolumn=80
-:highlight colorcolumn ctermbg=234
+highlight colorcolumn ctermbg=234
 
 " custom colors to highlight search results
 "hi Search cterm=NONE ctermbg=lightcyan
@@ -300,6 +306,7 @@ endfunction
 "nnoremap <leader>m :<C-u>Unite -quick-match file_mru<CR>
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_php_checkers = ['php', 'phpxmllint']
 
 " http://vimcasts.org/episodes/creating-mappings-that-accept-a-count/
 nnoremap Q :normal n.<CR>
