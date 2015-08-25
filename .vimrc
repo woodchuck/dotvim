@@ -105,6 +105,9 @@ nnoremap ; :
 " nnoremap : ; breaks command-t
 nnoremap : ;
 
+" Move to found item as we type search string
+set incsearch
+
 " Highlight things that we find with the search
 set hlsearch
 
@@ -135,6 +138,8 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|coverage|tmp|vendor)$',
   \ 'file': '\v\.(png|jpg|otf|woff|jpeg|orig)$'
   \ }
+
+nnoremap <Leader>T :TagbarToggle<CR>
 
 " close buffer using bufkill plugin to preserve window
 nnoremap <Leader>x :BD<CR>
