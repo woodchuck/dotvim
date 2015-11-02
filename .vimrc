@@ -32,10 +32,6 @@ set wildmenu
 set wildmode=longest,list,full
 set wildignore=log/**,.git,vendor/bundle/**
 
-" enter newline and remain in normal mode
-map <S-Enter> o<Esc>
-"map <CR> o<Esc>
-
 " don't unload hidden buffers
 set hidden
 
@@ -97,7 +93,7 @@ highlight colorcolumn ctermbg=234
 hi Search cterm=reverse
 
 " easy way to get back to normal mode
-inoremap tn <Esc>
+inoremap uu <Esc>
 inoremap jj <Esc>
 
 " Swap ; and :  Convenient.
