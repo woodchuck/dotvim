@@ -39,7 +39,9 @@ set ignorecase
 set smartcase
 let g:php_sql_query = 1
 let g:php_noShortTags = 1
-let g:php_folding = 1
+"syntax folding is dog slow?
+"let g:php_folding = 1
+set foldmethod=syntax
 
 " show command being typed in the status bar
 set showcmd
