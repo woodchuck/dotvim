@@ -18,7 +18,7 @@ colorscheme sexy-railscasts-256
 set ls=2
 set pastetoggle=<F2>
 " command-t replaced with CtrlP
-" seek replaced with easymotion
+" seek replaced with easymotion, er sneak
 " neocomplcache replaced with neocomplete
 let g:pathogen_disabled = ['command-t', 'nerdcommenter', 'seek', 'neocomplcache']
 execute pathogen#infect()
@@ -118,7 +118,7 @@ nnoremap <Leader>g :e#<CR>
 
 nnoremap <Leader>p :RainbowParenthesesToggle<CR>
 
-nmap s <Plug>(easymotion-s)
+"nmap s <Plug>(easymotion-s)
 
 " Substitute
 "nnoremap <Leader>s :%s//<left>
