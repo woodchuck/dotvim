@@ -95,8 +95,7 @@ highlight colorcolumn ctermbg=234
 hi Search cterm=reverse
 
 " easy way to get back to normal mode
-inoremap uu <Esc>
-inoremap jj <Esc>
+inoremap hh <Esc>
 
 " Swap ; and :  Convenient.
 nnoremap ; :
