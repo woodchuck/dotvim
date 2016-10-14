@@ -268,25 +268,6 @@ let g:dbext_default_profile_webadmin_sha = 'type=DBI:user=webadmin:passwd=xxxxxx
 let g:dbext_default_DBI_commit_on_disconnect = 0
 let g:dbext_default_DBI_disconnect_onerror = 0
 
-" Gonzui {{{
-" TODO: search for word under the cursor
-" TODO: determine which gonzui package to search based on :pwd
-
-command! -nargs=1 Gonzui call s:Gonzui('<args>')
-
-function! Gonzui(query)
-  let grepprg = &grepprg
-  let grepformat = &grepformat
-  try
-    let &grepprg = 'gonzui-search -n $*'
-    let &grepformat = '%f:%l: %m'
-    exe "grep '" . shellescape(a:query) . "'"
-  finally
-    let &grepprg = grepprg
-    let &grepformat = grepformat
-  endtry
-endfunction
-
 " Unite mappings
 "let g:unite_source_find_max_candidates = 30000
 "let g:unite_source_file_rec_max_candidates = 30000
@@ -316,3 +297,4 @@ nnoremap Q :normal n.<CR>
 " remember useful regexes
 source ~/.vim/regexlist
 
+let g:skip_xpath = 1
