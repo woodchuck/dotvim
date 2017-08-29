@@ -72,6 +72,7 @@ set number
 nnoremap <Leader>ln :set number!<CR>
 " unobtrusive color for line numbers
 hi LineNr ctermfg=239
+hi LineNr guifg=#666666 guibg=#222222
 
 set expandtab
 set shiftwidth=2
@@ -298,3 +299,7 @@ nnoremap Q :normal n.<CR>
 source ~/.vim/regexlist
 
 let g:skip_xpath = 1
+
+" store swapfiles out of the way so they don't clutter up git
+set backupdir=~/tmp//
+set directory=~/tmp//
