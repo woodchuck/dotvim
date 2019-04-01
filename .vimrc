@@ -50,12 +50,13 @@ set showcmd
 let g:CommandTMaxFiles=30000
 
 " locations of my ctags files
-set tags=~/depot/mainline/common/tags,~/git/rails/tags
+"set tags=~/depot/mainline/common/tags,~/git/rails/tags
 " search up to root for files called 'tags'
-set tags+=./tags;/
+"set tags+=./tags;/
+set tags=./tags;/
 " rebuild ctags files
 " common and rails source
-nnoremap <Leader>r :!cd ~/depot/mainline/common; ctags -R .; cd -; cd ~/git/rails; ctags -R .; cd -<CR>
+"nnoremap <Leader>r :!cd ~/depot/mainline/common; ctags -R .; cd -; cd ~/git/rails; ctags -R .; cd -<CR>
 " recurse current directory
 nnoremap <Leader>R :!ctags -R .<CR>
 
